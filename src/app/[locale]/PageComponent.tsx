@@ -105,10 +105,10 @@ const PageComponent = ({
                 <p className="text-[#7c8aaa] text-xl">{indexLanguageText.pDescription}</p>
               </div>
               <a
-                href="https://www.producthunt.com/posts/sorawebui?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sorawebui"
+                href="https://www.producthunt.com/posts/ChatGptSora?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ChatGptSora"
                 target="_blank"><img
                 src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440945&theme=light"
-                alt="SoraWebui - Open&#0045;source&#0032;Sora&#0032;Web&#0032;Client | Product Hunt"
+                alt="ChatGptSora - Open&#0045;source&#0032;Sora&#0032;Web&#0032;Client | Product Hunt"
               /></a>
             </div>
             <div>
@@ -225,7 +225,7 @@ const PageComponent = ({
                     {questionText.h2_2_p3}
                   </p>
                   <p>
-                    {questionText.h2_2_p4a}<Link href={"https://sorawebui.com/"}
+                    {questionText.h2_2_p4a}<Link href={"https://chatgptsora.co/"}
                                                  className={"text-blue-500"}>https://sorawebui.com/</Link>{questionText.h2_2_p4b}<Link
                     href={"https://github.com/SoraWebui/SoraWebui"}
                     className={"text-blue-500"}>https://github.com/SoraWebui/SoraWebui</Link>.
