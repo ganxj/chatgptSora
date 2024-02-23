@@ -43,6 +43,10 @@ export default async function LocaleLayout({
                   `,
         }}
       />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875666101409334"
+              crossorigin="anonymous"></script>
+
+
     </head>
     <body suppressHydrationWarning={true} className={clsx(inter.className, 'flex h-full flex-col bg-[#020d24]')}>
     <CommonProvider>
