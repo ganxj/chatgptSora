@@ -32,7 +32,10 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
     <head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGEQF02QN0"></script>
+        <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875666101409334"
+                crossOrigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGEQF02QN0"></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `
@@ -43,8 +46,6 @@ export default async function LocaleLayout({
                   `,
         }}
       />
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6875666101409334"
-              crossorigin="anonymous"></script>
 
 
     </head>
