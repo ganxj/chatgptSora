@@ -4,14 +4,14 @@
     "language": "简体中文",
     "languageInChineseSimple": "简体中文",
     "title": "ChatGptSora",
-    "description": "ChatGptSora 是一个开源平台，使用户能够使用 OpenAI 的 Sora 模型轻松地从文本创建视频。",
+    "description": "ChatGptSora 是一个开源平台,使用户能够使用 OpenAI 的 Sora 模型轻松地从文本创建视频。",
     "loadingText": "加载中...",
     "generateText": "生成中...",
     "buttonText": "生成",
     "placeholderText": "在此处输入或粘贴文本...",
     "loginText": "登录",
     "h1Text": "ChatGptSora",
-    "pDescription": "ChatGptSora 是一个开源项目，允许用户使用 OpenAI 的 Sora 模型使用文本在线生成视频，从而简化视频创建，并具有轻松的一键网站部署功能。",
+    "pDescription": "ChatGptSora，由OpenAI的Sora模型驱动，是一个突破性的开源项目，彻底革新了视频创作。它允许用户直接通过文本来制作视频，利用Sora的高级AI产生现实场景和动画。通过ChatGptSora，仅需输入指令即可创造高质量视频，体现了文本到视频技术的顶峰，并提供无缝部署。对于寻求通过OpenAI先进Sora能力创新的创作者来说，这是理想选择。",
     "soraVideoExample": "Sora 生成的示例视频",
     "prompt": "提示词",
     "soraWorksTitle": "作品列表",
@@ -72,24 +72,44 @@
     "h2_2_p2": "它简化了视频创建过程，方便部署和使用。",
     "h2_2_p3": "借助ChatGptSora，任何人都可以通过简单输入文本来创建视频，使其成为专业人士和视频制作爱好者的可访问工具。",
     "h2_2_p4a": "有关更多信息，请访问ChatGptSora网站 ",
-    "h2_2_p4b": " 或其GitHub仓库 "
+    "h2_2_p4b": " 或其GitHub仓库 ",
+    "h2_3": "如何使用Sora",
+    "h2_3_p1": "目前，OpenAI的Sora模型尚未公开获取。",
+    "h2_3_p2": "但是，您可以在Sam Altman的Twitter账户评论中发布视频提示（文字描述）来与其互动。",
+    "h2_3_p3": "OpenAI的CEO Sam Altman可能会选择您的提示，使用Sora模型创建视频并分享。",
+    "h2_3_p4": "这是在Sora通用使用之前体验其功能的独特机会。",
+    "h2_3_p5": "要获取更新和更多信息，请关注Sam Altman的Twitter。",
+    "h2_4": "什么是FakeSoraAPI",
+    "h2_4_p1": "FakeSoraAPI是一个模拟Sora模型行为的API。它允许用户提交文本提示，并返回一个模拟的视频响应，而不是实际的Sora模型。",
+    "h2_4_p2": "该API的设计目的是为开发人员提供一个测试平台，在Sora模型正式发布之前，他们可以使用它来验证和调试他们的应用程序。",
+    "h2_4_p3": "通过使用FakeSoraAPI，开发人员可以模拟Sora模型的行为，以便更好地理解其工作原理，并进行必要的调整和改进。",
+    "h2_5": "FakeSoraAPI的工作原理是怎样的",
+    "h2_5_p1": "FakeSoraAPI的工作原理非常简单。首先，用户通过API向FakeSoraAPI发送文本提示，描述他们想要生成的视频内容。这些文本提示可以包括场景描述、角色动作或对话等。",
+    "h2_5_p2": "FakeSoraAPI利用预训练的Sora模型，根据这些文本提示生成相应的视频。Sora模型会根据文本提示理解用户的意图，并将其转化为视频内容。",
+    "h2_5_p3": "FakeSoraAPI将生成的视频返回给用户，供其查看和使用。",
+    "h2_6": "如何使用ChatGptSora",
+    "h2_6_p1": "使用ChatGptSora，只需访问网站并按照提供的说明操作。",
+    "h2_6_p2": "通常你会找到一个用户友好的界面，你可以在其中输入你想创建的视频的文本描述。",
+    "h2_6_p3": "提交描述后，ChatGptSora将使用OpenAI的Sora模型为你生成视频。",
+    "h2_6_p4": "视频生成完毕后，你可以直接在网站上观看并下载，以供使用或分享。"
+
   },
   "videosPage": {
     "title": "视频：Sora 生成的视频、Sora 生成的最新视频。",
-    "description": "Sora 生成的视频，Sora 生成的最新视频。 | ChatGptSora.com"
+    "description": "Sora 生成的视频，Sora 生成的最新视频。 | ChatGptSora.co"
   },
   "worksPage": {
     "title": "作品：生成视频历史。",
-    "description": "生成视频历史。| ChatGptSora.com",
+    "description": "生成视频历史。| ChatGptSora.co",
     "h1Text": "ChatGptSora - 作品",
-    "pDescription": "ChatGptSora 是一个开源项目，通过允许用户使用文本在线生成视频，使用 OpenAI 的 Sora 模型简化视频创建，具有简单的一键网站部署功能。",
+    "pDescription": "ChatGptSora，由OpenAI的Sora模型驱动，是一个突破性的开源项目，彻底革新了视频创作。它允许用户直接通过文本来制作视频，利用Sora的高级AI产生现实场景和动画。通过ChatGptSora，仅需输入指令即可创造高质量视频，体现了文本到视频技术的顶峰，并提供无缝部署。对于寻求通过OpenAI先进Sora能力创新的创作者来说，这是理想选择。",
     "generateNew": "生成新视频"
   },
   "playgroundPage": {
     "title": "playground：简单生成视频。",
-    "description": "简单生成视频。| ChatGptSora.com",
+    "description": "简单生成视频。| ChatGptSora.co",
     "h1Text": "ChatGptSora - playground",
-    "pDescription": "ChatGptSora 是一个开源项目，通过允许用户使用文本在线生成视频，使用 OpenAI 的 Sora 模型简化视频创建，具有简单的一键网站部署功能。",
+    "pDescription": "ChatGptSora，由OpenAI的Sora模型驱动，是一个突破性的开源项目，彻底革新了视频创作。它允许用户直接通过文本来制作视频，利用Sora的高级AI产生现实场景和动画。通过ChatGptSora，仅需输入指令即可创造高质量视频，体现了文本到视频技术的顶峰，并提供无缝部署。对于寻求通过OpenAI先进Sora能力创新的创作者来说，这是理想选择。",
     "moreWorks": "更多作品"
   }
 }

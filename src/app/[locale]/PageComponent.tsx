@@ -226,9 +226,98 @@ const PageComponent = ({
                   </p>
                   <p>
                     {questionText.h2_2_p4a}<Link href={"https://chatgptsora.co/"}
-                                                 className={"text-blue-500"}>https://sorawebui.com/</Link>{questionText.h2_2_p4b}<Link
+                                                 className={"text-blue-500"}>https://chatgptsora.co/</Link>{questionText.h2_2_p4b}<Link
                     href={"https://github.com/SoraWebui/SoraWebui"}
                     className={"text-blue-500"}>https://github.com/SoraWebui/SoraWebui</Link>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={"border-[14px] border-[#ffffff1f] object-fill w-[90%] mx-auto mt-8"}>
+              <div className={"mx-auto bg-white py-8"}>
+                <div className={"pb-2 border-b-2"}>
+                  <h2
+                    className={"text-blue-500 pt-4 text-4xl flex justify-center items-center"}>{questionText.h2_3}</h2>
+                </div>
+                <div className={"w-[96%] text-gray-700 prose mx-auto mt-4"}>
+                  <p>
+                    {questionText.h2_3_p1}
+                  </p>
+                  <p>
+                    {questionText.h2_3_p2}
+                  </p>
+                  <p>
+                    {questionText.h2_3_p3}
+                  </p>
+                  <p>
+                    {questionText.h2_3_p4}
+                  </p>
+                  <p>
+                    {questionText.h2_3_p5}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={"border-[14px] border-[#ffffff1f] object-fill w-[90%] mx-auto mt-8"}>
+              <div className={"mx-auto bg-white py-8"}>
+                <div className={"pb-2 border-b-2"}>
+                  <h2
+                    className={"text-blue-500 pt-4 text-4xl flex justify-center items-center"}>{questionText.h2_4}</h2>
+                </div>
+                <div className={"w-[96%] text-gray-700 prose mx-auto mt-4"}>
+                  <p>
+                    {questionText.h2_4_p1}
+                  </p>
+                  <p>
+                    {questionText.h2_4_p2}
+                  </p>
+                  <p>
+                    {questionText.h2_4_p3}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={"border-[14px] border-[#ffffff1f] object-fill w-[90%] mx-auto mt-8"}>
+              <div className={"mx-auto bg-white py-8"}>
+                <div className={"pb-2 border-b-2"}>
+                  <h2
+                    className={"text-blue-500 pt-4 text-4xl flex justify-center items-center"}>{questionText.h2_5}</h2>
+                </div>
+                <div className={"w-[96%] text-gray-700 prose mx-auto mt-4"}>
+                  <p>
+                    {questionText.h2_5_p1}
+                  </p>
+                  <p>
+                    {questionText.h2_5_p2}
+                  </p>
+                  <p>
+                    {questionText.h2_5_p3}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className={"border-[14px] border-[#ffffff1f] object-fill w-[90%] mx-auto mt-8"}>
+              <div className={"mx-auto bg-white py-8"}>
+                <div className={"pb-2 border-b-2"}>
+                  <h2
+                    className={"text-blue-500 pt-4 text-4xl flex justify-center items-center"}>{questionText.h2_6}</h2>
+                </div>
+                <div className={"w-[96%] text-gray-700 prose mx-auto mt-4"}>
+                  <p>
+                    {questionText.h2_6_p1}
+                  </p>
+                  <p>
+                    {questionText.h2_6_p2}
+                  </p>
+                  <p>
+                    {questionText.h2_6_p3}
+                  </p>
+                  <p>
+                    {questionText.h2_6_p4}
                   </p>
                 </div>
               </div>

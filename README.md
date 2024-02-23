@@ -52,7 +52,7 @@ pnpm dev
 ```
 
 ### 5. Open [http://localhost](http://localhost) with your browser to see it.
-![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
+![success_deploy.jpg](https://chatgptsora.co/success_deploy.jpg)
 
 
 ### Important

@@ -52,7 +52,7 @@ pnpm dev
 ```
 
 ### 4. 在浏览器打开 [http://localhost](http://localhost)
-![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
+![success_deploy.jpg](https://chatgptsora.co/success_deploy.jpg)
 
 
 ### 重要事项

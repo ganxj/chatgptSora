@@ -57,13 +57,13 @@ export default function Header({
       <GeneratingModal generatingText={indexLanguageText.generateText}/>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href={`/${locale}`} className="-m-1.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-            <Image className="h-8 w-auto" src="/appicon.svg" alt="chatgptsora.co" width={32} height={32}/>
-          </a>
+          {/*<a href={`/${locale}`} className="-m-1.5 p-1.5" onClick={() => setShowLoadingModal(true)}>*/}
+          {/*  <Image className="h-8 w-auto" src="/appicon.svg" alt="chatgptsora.co" width={32} height={32}/>*/}
+          {/*</a>*/}
           <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
             <Image
-              className="h-8 w-auto"
-              src="/sorawebui.svg"
+              className="h-14 w-auto"
+              src="/chatgptsora.svg"
               width={32}
               height={24}
               alt="chatgptsora.co"/>
@@ -153,7 +153,7 @@ export default function Header({
             <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
               <Image
                 className="h-8 w-auto"
-                src="/sorawebui.svg"
+                src="/chatgptsora.svg"
                 width={32}
                 height={24}
                 alt="chatgptsora.co"/>
