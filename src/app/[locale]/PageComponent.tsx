@@ -104,11 +104,10 @@ const PageComponent = ({
               <div className="mb-5 max-w-[528px] lg:mb-8">
                 <p className="text-[#7c8aaa] text-xl">{indexLanguageText.pDescription}</p>
               </div>
-              <a
-                href="https://www.producthunt.com/posts/ChatGptSora?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ChatGptSora"
-                target="_blank"><img
-                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440945&theme=light"
-                alt="ChatGptSora - Open&#0045;source&#0032;Sora&#0032;Web&#0032;Client | Product Hunt"
+              <a href="https://www.producthunt.com/posts/chatgptsora?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatgptsora"
+                 target="_blank"><img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=441093&theme=light"
+                  alt="ChatGptSora - ChatGptSora&#0032;simplifies&#0032;video&#0032;creation&#0032;using&#0032;OpenAI&#0039;s&#0032;Sora | Product Hunt"
               /></a>
             </div>
             <div>
