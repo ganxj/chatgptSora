@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = {
+  friendship: [
+    {name: 'crew ai', href: 'https://crewai.net/'},
+    {name: 'Chronological Age Calculator', href: 'https://chronologicalagecalculator.co/'},
+    {name: 'AI Tool Dr', href: 'https://aitooldr.com/'},
+    {name: 'aixploria', href: 'https://www.aixploria.com/'},
+  ],
   product: [
     {name: 'ChatGpt Sora', href: 'https://chatgptsora.co'}
   ],
@@ -45,13 +51,24 @@ export default function Footer({
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <div className="text-sm font-semibold leading-6 text-white"></div>
+                <div className="text-sm font-semibold leading-6 text-white">Friendship</div>
                 <ul role="list" className="mt-6 space-y-4">
-
+                  {navigation.friendship.map((item) => {
+                        return (
+                            <li key={item.name}>
+                              <Link href={`${item.href}`}
+                                    target={"_blank"}
+                                    className="text-sm leading-6 text-gray-300 hover:text-[#2d6ae0]">
+                                {item.name}
+                              </Link>
+                            </li>
+                        )
+                      }
+                  )}
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-3 md:gap-8">
               <div>
                 <div className="text-sm font-semibold leading-6 text-white">Product</div>
                 <ul role="list" className="mt-6 space-y-4">
