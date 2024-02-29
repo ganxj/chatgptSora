@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const navigation = {
   product: [
-    {name: 'ChatGptSora', href: 'https://chatgptsora.co'}
+    {name: 'ChatGpt Sora', href: 'https://chatgptsora.co'}
   ],
   legal: [
     {name: 'Privacy Policy', href: '/privacy-policy'},
