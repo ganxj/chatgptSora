@@ -29,7 +29,7 @@ export default function Footer({
                 src="/appicon.svg"
                 width={32}
                 height={32}
-                alt="chatgptsora.co"
+                alt="chatgpt sora"
               />
             </a>
             <p className="text-sm text-gray-300">

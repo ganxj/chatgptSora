@@ -107,7 +107,7 @@ const PageComponent = ({
               <a href="https://www.producthunt.com/posts/chatgptsora?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-chatgptsora"
                  target="_blank"><img
                   src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=441093&theme=light"
-                  alt="ChatGptSora - ChatGptSora&#0032;simplifies&#0032;video&#0032;creation&#0032;using&#0032;OpenAI&#0039;s&#0032;Sora | Product Hunt"
+                  alt="ChatGpt Sora - ChatGpt Sora&#0032;simplifies&#0032;video&#0032;creation&#0032;using&#0032;OpenAI&#0039;s&#0032;Sora | Product Hunt"
               /></a>
             </div>
             <div>
