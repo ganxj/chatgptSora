@@ -57,6 +57,7 @@ const PageComponent = ({
     }
 
     setVideo(video);
+    localStorage.setItem('video', JSON.stringify(video));
     // if (result.data) {
     //   if (!result.data[0].revised_prompt) {
     //     return
