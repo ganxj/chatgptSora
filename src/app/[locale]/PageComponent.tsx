@@ -3,10 +3,12 @@ import {useRouter} from "next/navigation";
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import {useState} from "react";
-import {randomVideo} from "~/data/openaiVideo";
+import {allVideoList, randomVideo} from "~/data/openaiVideo";
 import HeadInfo from "~/components/HeadInfo";
 import {useCommonContext} from "~/context/common-context";
 import Link from "next/link";
+import {sleep} from "ahooks/es/utils/testingHelpers";
+import {CalculateCosineSimilarity} from "~/context/text-cosine-similarity";
 
 const PageComponent = ({
                          locale = '',
@@ -30,49 +32,74 @@ const PageComponent = ({
     const body = {
       prompt: textStr
     };
-    const response = await fetch(`/${locale}/api/generate`, {
-      method: 'POST',
-      body: JSON.stringify(body)
-    })
-    const result = await response.json();
+    // const response = await fetch(`/${locale}/api/generate`, {
+    //   method: 'POST',
+    //   body: JSON.stringify(body)
+    // })
+    // const result = await response.json();
+    await sleep(3000);
     setShowGeneratingModal(false);
-    if (result.data) {
-      if (!result.data[0].revised_prompt) {
-        return
-      }
-      const video = {
-        revised_prompt: result.data[0].revised_prompt,
-        url: result.data[0].url
-      }
 
-      // add storage
-      const videoHistoryListStr = localStorage.getItem('videoHistoryList');
-      if (!videoHistoryListStr) {
-        const videoHistoryList = [];
-        videoHistoryList.unshift(video);
-        localStorage.setItem('videoHistoryList', JSON.stringify(videoHistoryList));
-      } else {
-        const videoHistoryList = JSON.parse(videoHistoryListStr);
-        // check exist
-        let exist = false;
-        for (let i = 0; i < videoHistoryList.length; i++) {
-          const videoHistory = videoHistoryList[i];
-          if (videoHistory.revised_prompt == video.revised_prompt) {
-            exist = true;
-            localStorage.setItem('video', JSON.stringify(video));
-            router.push(`/${locale}/playground`)
-            return;
-          }
-        }
-        if (!exist) {
-          videoHistoryList.unshift(video);
-          // const newList = videoHistoryList.slice(0, 3);
-          localStorage.setItem('videoHistoryList', JSON.stringify(videoHistoryList));
-        }
+    let maxNumber = -1
+    let currentVideo = allVideoList[0]
+    for (let i = 0; i < allVideoList.length; i++) {
+      let video = allVideoList[i]
+      let number = CalculateCosineSimilarity(video.prompt , textStr)
+      if (number > maxNumber){
+        maxNumber = number
+        currentVideo = video
       }
-      localStorage.setItem('video', JSON.stringify(video));
-      router.push(`/${locale}/playground`)
     }
+
+    console.log(maxNumber , currentVideo)
+
+    const video = {
+      revised_prompt: currentVideo.prompt,
+      url: currentVideo.videoUrl
+    }
+
+    localStorage.setItem('video', JSON.stringify(video));
+    router.push(`/${locale}/playground`)
+
+
+
+    // if (result.data) {
+    //   if (!result.data[0].revised_prompt) {
+    //     return
+    //   }
+    //   const video = {
+    //     revised_prompt: result.data[0].revised_prompt,
+    //     url: result.data[0].url
+    //   }
+    //
+    //   // add storage
+    //   const videoHistoryListStr = localStorage.getItem('videoHistoryList');
+    //   if (!videoHistoryListStr) {
+    //     const videoHistoryList = [];
+    //     videoHistoryList.unshift(video);
+    //     localStorage.setItem('videoHistoryList', JSON.stringify(videoHistoryList));
+    //   } else {
+    //     const videoHistoryList = JSON.parse(videoHistoryListStr);
+    //     // check exist
+    //     let exist = false;
+    //     for (let i = 0; i < videoHistoryList.length; i++) {
+    //       const videoHistory = videoHistoryList[i];
+    //       if (videoHistory.revised_prompt == video.revised_prompt) {
+    //         exist = true;
+    //         localStorage.setItem('video', JSON.stringify(video));
+    //         router.push(`/${locale}/playground`)
+    //         return;
+    //       }
+    //     }
+    //     if (!exist) {
+    //       videoHistoryList.unshift(video);
+    //       // const newList = videoHistoryList.slice(0, 3);
+    //       localStorage.setItem('videoHistoryList', JSON.stringify(videoHistoryList));
+    //     }
+    //   }
+    //   localStorage.setItem('video', JSON.stringify(video));
+    //   router.push(`/${locale}/playground`)
+    // }
   }
 
   const [videoList, setVideoList] = useState(initVideoList);
