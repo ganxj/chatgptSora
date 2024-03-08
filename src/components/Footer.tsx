@@ -6,7 +6,7 @@ const navigation = {
     {name: 'crew ai', href: 'https://crewai.net/'},
     {name: 'Chronological Age Calculator', href: 'https://chronologicalagecalculator.co/'},
     {name: 'AI Tool Dr', href: 'https://aitooldr.com/'},
-    {name: 'aixploria', href: 'https://www.aixploria.com/'},
+    // {name: 'aixploria', href: 'https://www.aixploria.com/'},
   ],
   product: [
     {name: 'ChatGpt Sora', href: 'https://chatgptsora.co'}
